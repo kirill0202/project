@@ -1,0 +1,11 @@
+@function get-color($key: "primary") {
+  @return map-get($colors, $key);
+}
+
+$colors: (
+  "main": #1a202c,
+  "authButton": #90cdf4,
+  "button": #2b88c2,
+  "buttonBorder": #0078c2,
+  "background": #e9e9e9,
+);

@@ -1,0 +1,60 @@
+.alert-enter {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.alert-enter-active {
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.hidden {
+  display: none;
+}
+
+.webkit {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.smile {
+  bottom: -175px;
+  -webkit-animation-name: smile;
+          animation-name: smile;
+  -webkit-animation-duration: var(--duration);
+          animation-duration: var(--duration);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes smile {
+  0% {
+    bottom: -175px;
+  }
+  99% {
+    bottom: 845px;
+  }
+  100% {
+    bottom: 850px;
+  }
+}
+
+@keyframes smile {
+  0% {
+    bottom: -175px;
+  }
+  99% {
+    bottom: 845px;
+  }
+  100% {
+    bottom: 850px;
+  }
+}
+/*# sourceMappingURL=smile.css.map */
